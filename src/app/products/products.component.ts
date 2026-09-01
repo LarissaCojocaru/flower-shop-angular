@@ -19,7 +19,6 @@ export class ProductsComponent {
  searchText: string = '';
 
  onSearchTextEntered(searchValue: string){
-  this.searchText = searchValue;
-  console.log(this.searchText)
-}
+  this.searchText = searchValue.toLowerCase();
+ }
 }

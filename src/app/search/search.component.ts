@@ -1,4 +1,3 @@
-import { ThisReceiver } from '@angular/compiler';
 import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
@@ -8,23 +7,12 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class SearchComponent {
 
-  searchValue: string = '';
-  changeSearchValue(eventData: Event){
- // console.log((<HTMLInputElement>eventData.target).value)
-  this.searchValue = (<HTMLInputElement>eventData.target).value
-  }
-
   enteredSearchValue: string = '';
-  
+
   @Output()
-  searchTexteChanged: EventEmitter<string> = new EventEmitter<string>();
+  searchTextChanged: EventEmitter<string> = new EventEmitter<string>();
 
-  onSearchTextChanged(){
-    this.searchTexteChanged.emit(this.enteredSearchValue)
-
+  onSearchTextChanged() {
+    this.searchTextChanged.emit(this.enteredSearchValue);
   }
-
-  
-
 }
-

@@ -1,8 +1,4 @@
-<!--<div *ngFor = "let item of [1, 3, 5, 17, 29]">
-  <p>Number is: {{ item }}</p>
-</div>-->
-
-<app-search (searchTexteChanged)="onSearchTextEntered($event)"></app-search>
+<app-search (searchTextChanged)="onSearchTextEntered($event)"></app-search>
 
 <div *ngFor="let p of products">
     <div class="product-container" *ngIf="searchText === '' || p.name.toLowerCase().includes(searchText)">
