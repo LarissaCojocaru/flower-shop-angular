@@ -6,14 +6,14 @@
       <div>
         <div class="name-container"><h6>{{p. name}}</h6></div>
         <div class="detailContainer">
-          <div class="details" [ngStyle]='{color: p.available === "Avaliable" ? "Black" : "Red"}'> {{p.available}}</div>
+          <div class="details" [ngStyle]='{color: p.available === "Available" ? "Black" : "Red"}'> {{p.available}}</div>
           <div class="details"><b>Price: </b>{{p.price}}</div>
           <div class="details"><b>Color: </b>{{p.color}}</div>
         </div>
       </div>
       <div class="option">
         <button class="btn btn-success">Show Details</button>
-        <button class="btn btn-warning" *ngIf="p.available === 'Avaliable'; else notifyme">Buy Now</button>
+        <button class="btn btn-warning" *ngIf="p.available === 'Available'; else notifyme">Buy Now</button>
         <ng-template #notifyme>
           <button class="btn btn-danger">Notify Me</button>
         </ng-template>
