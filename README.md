@@ -25,7 +25,7 @@ the typed value:
 
 ```typescript
 @Output()
-searchTexteChanged: EventEmitter<string> = new EventEmitter<string>();
+searchTextChanged: EventEmitter<string> = new EventEmitter<string>();
 ```
 
 `ProductsComponent` binds to that event, stores the value, and the template uses
