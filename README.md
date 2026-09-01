@@ -37,8 +37,8 @@ free of filtering logic means it can be reused anywhere a search input is needed
 Prerequisites: Node.js and npm.
 
 ```bash
-git clone https://github.com/LarissaCojocaru/Flowers.git
-cd Flowers
+git clone https://github.com/LarissaCojocaru/flower-shop-angular.git
+cd flower-shop-angular
 npm install
 npm start
 ```
